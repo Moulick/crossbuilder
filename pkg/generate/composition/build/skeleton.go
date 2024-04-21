@@ -352,7 +352,7 @@ func (c *composeTemplateSkeleton) validatePatch(patch xapiextv1.Patch, registere
 		patchType = xapiextv1.PatchTypeFromCompositeFieldPath
 	}
 
-	switch patchType {
+	switch patchType { //nolint:exhaustive
 	case xapiextv1.PatchTypeFromCompositeFieldPath:
 		return validatePatch(patch, c.compositionSkeleton.composite.Object, c.base.Object, registeredCompositePaths, registeredPaths)
 	case xapiextv1.PatchTypeToCompositeFieldPath:
