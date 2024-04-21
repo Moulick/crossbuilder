@@ -17,3 +17,6 @@ cover.out
 
 # ignore asdf local versions
 /.tool-versions
+
+# binaries
+xrd-gen
